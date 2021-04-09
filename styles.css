@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-right: 10px;
+  height: 50px;
+  width: 150px;
+
+  opacity: 1;
+  color: #fff;
+  background-color: tomato;
+  border-color: transparent;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.stopBtn {
+  position: relative;
+  z-index: 2;
+}
+button.focused {
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
+}
